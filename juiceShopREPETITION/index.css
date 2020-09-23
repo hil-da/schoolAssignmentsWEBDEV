@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Oswald";
+}
+
+.wrapper {
+	height: 700px;
+}
+
+/* NAV */
+.logo {
+	height: 66px;
+	width: 90px;
+	cursor: pointer;
+	position: relative;
+	top: 6px;
+	left: 45px;
+	transition: transform .2s; 
+}
+
+.logo:hover {
+	transform: scale(1.1);
+	transition: 0.3s ease;
+}
+
+nav {
+	background-color: #ffffff;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	margin: 12px;
+	align-items: center;
+}
+
+.menu li {
+	font-size: 16px;
+}
+
+.menu li a {
+	display: block;
+}
+
+.toggle {
+	cursor: pointer;
+}
+
+.bars {
+	background: #2e2e2e;
+	display: inline-block;
+	height: 1.5px;
+	position: relative;
+	width: 25px;
+	top: -10px;
+}
+
+.bars::before {
+	background: #202020;
+	content: "";
+	display: inline-block;
+	height: 1.5px;
+	position: absolute;
+	width: 25px;
+	top: 10px;
+}
+
+.btn {
+	border: 1px solid rgb(34, 34, 34);
+	border-radius: 4px;
+	padding: 8px 35px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.block-order {
+	background-color: rgb(255, 167, 36);
+	padding: 20px;
+}
+
+.block-order p {
+	text-align: center;
+	font-weight: 900;
+}
+
+.hov {
+	transition: transform .2s; 
+}
+
+.hov:hover {
+	transform: scale(1.1);
+	background-color: #cecece;
+	transition: 0.3s ease;
+}
+
+/* SLIDESHOW */
+
+.title {
+	font-family: 'Anton', sans-serif;
+	font-size: 40px;
+	letter-spacing: 2px;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+
+.start {
+	margin-right: 900px;
+	position: relative;
+	top: -400px;
+}
+
+.pg {
+	text-align: center;
+	position: relative;
+	top: 600px;
+	left: 200px;
+	z-index: 1;
+	padding: 30px;
+	width: 600px;
+
+}
+
+.order, .menu-slide{
+	padding: 30px;
+	top: 200px;
+	position: relative;
+}
+
+.order {
+	margin-left: 900px;
+	height: 600px;
+}
+
+.menu-slide {
+	margin-left: 1000px;
+	height: 650px;
+	position: relative;
+	top: 149px;
+}
+
+.slideshow-container {
+	position: relative;
+	margin: auto;
+	background-color: #f3f3f5;
+	height: 600px;
+}
+
+.slides {
+	display: none;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+	cursor: pointer;
+	height: 5px;
+	width: 5px;
+	margin: 0 2px;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+.order-now, .tell-me{
+	position: relative;
+	top: 600px;
+	display: inline;
+	left: 370px;
+}
+
+.order-now {
+	background-color: rgb(255, 167, 36);
+	border: none;
+}
+
+/*MAIN2*/
+
+.main2 {
+	background: #fafafa;
+	height: 700px;
+}
+
+.photo1 {
+	width: 850px;
+	height: 550px;
+	position: relative;
+	top: -245px;
+	padding: 10px;
+}
+
+.sec2 {
+	position: relative;
+	top: 150px;
+	left: 1000px;
+	width: 600px;
+}
+
+.dis {
+	position: relative;
+	left: 1230px;
+	top: 140px;
+	display: block;
+	background-color: #ffffff;
+	padding: 15px;
+}
+
+.dis:hover, .tell-me:hover, .dis2:hover {
+	background-color: #cecece;
+	transition: 0.3s ease;
+}
+
+/* MAIN3 */
+.main3 {
+	background-color: #f3f3f5;
+	position: relative;
+	top: -140px;
+	height: 500px;
+
+}
+.sec3 {
+	position: relative;
+	top: 20px;
+	left: 100px;
+	width: 600px;
+}
+
+.color-change {
+	display: contents;
+}
+
+.color-change:hover {
+	color: rgb(255, 167, 36);
+}
+
+.photo2 {
+	height: 500px;
+	position: relative;
+	left: 750px;
+	top: -221px;
+}
+
+.dis2 {
+	background-color: #f3f3f5;
+	position: relative;
+	padding: 15px;
+	top: -450px;
+	left: 340px;
+}
+
+/* MAIN4 */
+
+.photo3 {
+	height: 500px;
+	width: 855px;
+	right: 175px;
+	position: relative;
+	top: -310px;
+	padding: 10px;
+}
+
+.sec4 {
+	position: relative;
+	top: -10px;
+	left: 120px;
+}
+
+.dis3 {
+	background-color: transparent;
+	position: relative;
+	top: -480px;
+	left: 330px;
+}
+
+.dis3:hover, .dis4:hover {
+	background-color: rgba(255, 255, 255, 0.473);
+	transition: 0.3s ease;
+}
+
+/* MAIN5 */
+.photo4 {
+	height: 481px;
+	width: 830px;
+	position: relative;
+	top: -1000px;
+	left: 707px;
+}
+
+.main5 {
+	height: 500px;
+}
+
+.sec5 {
+	position: relative;
+	top: -710px;
+	left: 990px;
+}
+
+.dis4 {
+	position: relative;
+	top: -1160px;
+	background-color: transparent;
+	left: 1225px;
+}
+
+/* MAIN6 */
+
+.block-got {
+	background-color: rgb(255, 167, 36);
+	position: relative;
+	top: -805px;
+	height: 450px;
+}
+
+.photo5 {
+	width: 100%;
+	z-index: 1;
+	opacity: 0.3;
+	top: -90px;
+	position: relative;
+}
+
+.white {
+	color: white;
+	position: relative;
+	top: 170px;
+}
+
+.dis5 {
+	background-color: transparent;
+	color: white;
+	border-color: white;
+	position: relative;
+	top: -320px;
+	left: 770px;
+	transition: 0.3s ease;
+}
+
+.dis5:hover {
+	background-color: rgba(161, 87, 2, 0.445);
+}
+
+/* FOOTER */
+.container {
+	background-color: #131313;
+	height: 510px;
+	padding: 90px;
+	color: white;
+	position: relative;
+	top: -778px;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 30px;
+}
+
+.title-footer {
+	font-family: 'Anton', sans-serif;
+	font-size: 17px;
+	letter-spacing: 3px;
+}
+
+.main9 {
+	width: 500px;
+
+}
+.main8 {
+}
+
+.main7 {
+
+}
+
+.main6 {
+	padding-left: 90px;
+	
+}
+
+.grid {
+	margin-left: 50px;
+}
+
+.icons {
+	padding: 20px;
+	position: relative;
+
+	right: 70px;
+}
+
+.icons i {
+	padding-left: 50px;
+}
+
+.grid li {
+	padding: 10px;
+}
+
+
+
+.hover {
+	color: rgb(65, 65, 65);
+	transition: 0.2s ease;
+}
+
+.hover:hover{
+	color: rgb(173, 173, 173);
+}
+
+.info {
+	padding: 10px;
+	position: relative;
+	right: 10px;
+	top: 5px;
+}
+
+#email {
+	top: 20px;
+	position: relative;
+	height: 35px;
+	width: 355px;
+}
+
+.dis6 {
+	position: relative;
+	width: 355px;
+	top: 30px;
+	background-color: transparent;
+	color: white;
+	transition: 0.3s ease;
+	border-color: white;
+}
+
+.dis6:hover {
+	background-color: rgba(201, 200, 200, 0.233);
+}
+
+@media screen and (max-width: 992px) {
+
+	.wrapper {
+		width: 80%;
+	}
+
+  }
+  
+  @media screen and (max-width: 600px) {
+	.wrapper {
+		width: 80%;
+	}
+  }
