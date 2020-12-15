@@ -113,9 +113,9 @@
         flex-wrap: wrap;
   }
   body .reorder2 {
-    -webkit-box-pack: between;
-        -ms-flex-pack: between;
-            justify-content: between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   body .image {
     width: auto;
@@ -137,3 +137,4 @@
     height: 200px;
   }
 }
+/*# sourceMappingURL=index.css.map */
