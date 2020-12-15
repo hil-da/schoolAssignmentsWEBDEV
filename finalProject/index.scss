@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap");
+$primColor: #101212;
+$subColor: #7a7a7ad8;
+$navColor: #525252b3;
+
+@mixin flexV {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+
+@mixin font {
+	font-family: "Montserrat", sans-serif;
+}
+
+@media (min-width: 368px) {
+	body {
+		background-color: $primColor;
+		.navbar {
+			background-color: $primColor;
+			.navbar-toggler {
+				&:focus {
+					outline: none;
+				}
+			}
+			.navbar-toggler-icon {
+				position: relative;
+				top: 20px;
+				background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+			}
+			.logo {
+				height: 50px;
+				width: 80%;
+				position: relative;
+				top: -30px;
+			}
+			.nav-item {
+				text-decoration: none;
+				.nav-link {
+					color: $navColor;
+					@include font;
+					letter-spacing: 0.25em;
+					font-size: 13px;
+				}
+			}
+		}
+
+		.subT {
+			color: $subColor;
+		}
+
+		.Ac {
+			width: 90%;
+			text-align: justify;
+		}
+		.row {
+			@include flexV;
+			.form {
+				padding: 20px;
+				@include flexV;
+				.form-group {
+					margin-bottom: 20px;
+					.form-control {
+						background-color: #3b3d3d7c;
+						color: #fce3fc;
+						letter-spacing: 0.25em;
+						font-size: 14px;
+					}
+				}
+				button.btn {
+					display: block;
+					padding: 11px 32px;
+					margin: 20px 0px;
+				}
+
+				.btn {
+					background-color: #272b2b;
+					color: $subColor;
+					@include font;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	body {
+		.navbar {
+			@include flexV;
+			.logo {
+				height: 60px;
+				margin: 10px;
+				top: 5px;
+				width: auto;
+			}
+			.nav-link {
+				letter-spacing: 0.27em;
+			}
+		}
+		.reorder {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.reorder2 {
+			justify-content: between;
+		}
+		.image {
+			width: auto;
+			height: 300px;
+		}
+		.Timage {
+			width: 200px;
+			height: 150px;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	body {
+		.image {
+			width: auto;
+			height: 500px;
+		}
+		.Timage {
+			min-width: 95%;
+			height: 200px;
+		}
+	}
+}
