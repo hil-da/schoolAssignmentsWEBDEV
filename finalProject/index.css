@@ -1,8 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap");
+@-webkit-keyframes revealBlock {
+  100% {
+    color: #0f0f0f;
+  }
+}
+@keyframes revealBlock {
+  100% {
+    color: #0f0f0f;
+  }
+}
+
+@-webkit-keyframes revealingIn {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes revealingIn {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes revealingOut {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes revealingOut {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+.abs-site-link {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+}
+
 @media (min-width: 368px) {
   body {
     background-color: #101212;
+    /* Animation */
   }
   body .navbar {
     background-color: #101212;
@@ -80,6 +140,55 @@
     background-color: #272b2b;
     color: #7a7a7ad8;
     font-family: "Montserrat", sans-serif;
+  }
+  body .line-1 {
+    position: relative;
+    top: 50%;
+    width: 7em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  body .anim-typewriter {
+    -webkit-animation: typewriter 1s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+            animation: typewriter 1s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @-webkit-keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 10em;
+    }
+  }
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 10em;
+    }
+  }
+  @-webkit-keyframes blinkTextCursor {
+    from {
+      border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+      border-right-color: transparent;
+    }
   }
 }
 
